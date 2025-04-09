@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background-color: #051119;
+    color: white;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 70px;
+    background-color: #191815;
+    border-right: 1px solid #1c222b;
+    height: 100vh;
+    width: 89px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 30px 30px 0px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .sidebar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: #8b949e;
+  }
+  
+  .sidebar-icon:hover {
+    background-color: #2a2823;
+    color: white;
+  }
+  
+  .sidebar-icon:nth-child(2) {
+    border-top: 1px solid #7B7B79;
+    margin-top: 10px;
+  }
+  
+  .sidebar-icon:last-child {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    width: 64px;
+    height: 60px;
+    margin-left: 5px;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: default;
+  }
+  
+  .main-content {
+    margin-left: 100px;
+    flex: 1;
+    padding: 20px;
+    width: calc(100% - 100px);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 0;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1898F9;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .profile-pic {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .filter-button {
+    background-color: #A9A9A9;
+    color: #1F1E1E;
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    margin: 0px;
+  }
+  
+  .filter-button img {
+    width: 15px;
+    height: 8.5px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+  }
+  
+  .complaints-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .complaint-card {
+    background-color: #17191F;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    height: 280px;
+    width: 180px;
+  }
+  
+  .complaint-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .complaint-card.highlighted {
+    border: 2px solid #1898F9;
+  }
+  
+  .view-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4B4444;
+    color: white;
+    border: 1px solid #B4B4B430;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 94px;
+    height: 35px;
+    box-shadow: 0 0 20px #BADEE154;
+  }
+  
+  .view-button:hover {
+    background-color: #857979;
+    border: 1px solid #4B4444;
+  }
+  
+  .complaints-sections {
+    padding-right: 0px;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }

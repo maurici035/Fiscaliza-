@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+  }
+  
+  body {
+    display: flex;
+    background-color: #051119;
+    color: white;
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 70px;
+    background-color: #191815;
+    border-right: 1px solid #1c222b;
+    height: 100vh;
+    width: 89px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 30px 30px 0px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .sidebar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: #8b949e;
+  }
+  
+  .sidebar-icon:hover {
+    background-color: #2a2823;
+    color: white;
+  }
+  
+  .sidebar-icon:nth-child(2) {
+    border-top: 1px solid #7B7B79;
+    margin-top: 10px;
+  }
+
+  .sidebar-icon:last-child {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+
+  .logo img {
+    width: 64px;
+    height: 60px;
+    margin-left: 5px;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: default;
+  }
+  
+  .brand-name {
+    position: absolute;
+    top: 21px;
+    left: 141px;
+  }
+  
+  .main-content {
+    margin-left: 70px;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-container {
+    background-color: #17191F;
+    border-radius: 30px;
+    width: 1033px;
+    padding: 30px;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .profile-title {
+    margin-bottom: 0px;
+  }
+  
+  .profile-field {
+    background-color: #374147;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 20px #BADEE133;
+    border: 1px  solid #B4B4B420;
+  }
+
+  input {
+    padding: 0px;
+    color: white;
+    background-color: #374147;
+    border: none;
+    width: 500px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(180deg);
+    width: 370px;
+  }
+  
+  .btn-alterar {
+    background-color: #1898F9;
+    color: white;
+    border: 0.1px  solid #B4B4B420;
+    border-radius: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0px 20px #BADEE133;
+    width: 176px;
+    height: 50px;
+  }
+  
+  .btn-alterar:hover {
+    background-color: #2674d3;
+  }
