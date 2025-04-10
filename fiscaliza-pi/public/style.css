@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Fundo com imagem desfocada */
+  .background {
+    background: url(WhatsApp\ Image\ 2025-04-03\ at\ 18.34.22\ \(1\).jpeg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  
+  /* Camada escura sobre a imagem */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6); /* escurecimento */
+    z-index: -1;
+  }
+  
+  /* Container do login */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Card de login */
+  .login-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
+  
+  .login-box .icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  .login-box button {
+    margin: 10px auto 0;
+    padding: 12px;
+    border: none;
+    background-color: #3248ff;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: block;  
+  }
+  forgot-password {
+    display: block;
+    text-align: right;
+    margin: 5px 0 15px;
+    font-size: 0.9em;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .login-box button:hover {
+    background-color: #1d2fcc;
+  }
+
+  body.dashboard {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  .app {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 60px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+    font-size: 1.5em;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #020b0c;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h2 {
+    font-size: 1.5em;
+    color: #0ff;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .map-section .map {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .report-box {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .report-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .report-options button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #0ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cards .card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  
+  .card button {
+    background-color: #0ff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9em;
+  } 
+  
